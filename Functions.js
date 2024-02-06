@@ -63,6 +63,17 @@ const person = {
 console.log(person.fullName()); // Output: "Ved Panchal"
 console.log(person.greet()); // Output: "Hello, my name is Ved Panchal and I am 21 years old"
 
+// Example - 3
+const loginUserMessage = (username) => {
+  if (!username) {
+    console.log(`please Enter userName`);
+    return;
+  }
+  return `${username} just logged in`;
+};
+
+console.log(loginUserMessage("Ved"));
+console.log(loginUserMessage());
 
 
 //                 ------- Function Inside a Function -------
@@ -78,7 +89,7 @@ const app = () => {
 
   console.log("Inside Function App");
   myfun();
-  console.log(addTwo(2,3));
+  console.log(addTwo(2, 3));
 };
 
-app()
+app();

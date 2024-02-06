@@ -1,11 +1,9 @@
-const numbers = [4, 2, 6, 2];
-
-const myFun = (number, index) => {
-  console.log(`index is ${index} and number is ${number}`);
+const loginUserMessage = (username) => {
+  if (!username) {
+    console.log(`please Enter userName`);
+    return;
+  }
+  return `${username} just logged in`;
 };
 
-// for (let i = 0; i < numbers.length; i++) {
-//   myFun(number[i], i);
-// }
-
-numbers.forEach(myFun);
+console.log(loginUserMessage("Ved"));

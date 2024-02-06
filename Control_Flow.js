@@ -53,22 +53,53 @@ for (let k = 0; k < 9; k++) {
   // more statements
 }
 
+
 //            ------ For of loop ------
 
+//Array
 let fruits = ["apple", "kiwi", "bannana", "graps"];
 for (const iterator of fruits) {
   // it returns the elements of array
   console.log(iterator);
 }
 
+// OBject
+const car = {
+  brand: "Toyota",
+  model: "Camry",
+  year: 2022,
+  color: "blue",
+};
+
+for (let [key, value] of Object.entries(car)) {
+  console.log(key + ": " + value);
+}
+
+
 //            ------ For in loop ------
 
+//Array
 let fruits1 = ["apple", "kiwi", "bannana", "graps"];
 for (const iterator in fruits1) {
   // use for a returns the index of array
   console.log(iterator); // return index
   console.log(fruits1[iterator]); // return elements
 }
+
+// OBject
+const car1 = {
+  brand: "Toyota",
+  model: "Camry",
+  year: 2022,
+  color: "blue",
+};
+
+for (let key in car1) {
+  console.log(key + ": " + car1[key]);
+}
+
+
+
 
 //            ------ For each loop ------
 
