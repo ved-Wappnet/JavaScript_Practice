@@ -1,26 +1,11 @@
-// let a = prompt("Enter first number")
-let a = 2;
+const numbers = [4, 2, 6, 2];
 
-// let b = prompt("Enter second number")
-let b = 3;
+const myFun = (number, index) => {
+  console.log(`index is ${index} and number is ${number}`);
+};
 
-if (isNaN(a) || isNaN(b)) {
-  throw SyntaxError("Sorry this is not allowed");
-}
+// for (let i = 0; i < numbers.length; i++) {
+//   myFun(number[i], i);
+// }
 
-let sum = parseInt(a) + parseInt(b);
-
-function main() {
-  let x = 1;
-  try {
-    console.log("The sum is ", sum * x);
-    return true;
-  } catch (error) {
-    console.log("There is something error");
-    return false;
-  } finally {
-    console.log("files are being closed and db connection is being closed");
-  }
-}
-
-let c = main();
+numbers.forEach(myFun);

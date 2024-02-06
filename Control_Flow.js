@@ -25,6 +25,65 @@ function magic() {
 const answer = magic();
 // console.log(answer(1337)); // 56154
 
+//            ------ While loop ------
+
+let n1 = 0;
+let x = 0;
+
+while (n1 < 3) {
+  n1++;
+  x += n1;
+}
+
+//            ------ DO While loop ------
+
+let result = "";
+let j = 0;
+do {
+  j++;
+  result += `${j}`;
+} while (j > 0 && j < 5);
+// Despite i === 0 this will still loop as it starts off without the test
+
+console.log(result);
+
+//            ------ For loop ------
+for (let k = 0; k < 9; k++) {
+  console.log(k);
+  // more statements
+}
+
+//            ------ For of loop ------
+
+let fruits = ["apple", "kiwi", "bannana", "graps"];
+for (const iterator of fruits) {
+  // it returns the elements of array
+  console.log(iterator);
+}
+
+//            ------ For in loop ------
+
+let fruits1 = ["apple", "kiwi", "bannana", "graps"];
+for (const iterator in fruits1) {
+  // use for a returns the index of array
+  console.log(iterator); // return index
+  console.log(fruits1[iterator]); // return elements
+}
+
+//            ------ For each loop ------
+
+const numbers = [4, 2, 6, 2];
+
+const myFun = (number, index) => {
+  console.log(`index is ${index} and number is ${number}`);
+};
+
+// for (let i = 0; i < numbers.length; i++) {
+//   myFun(number[i], i);
+// }
+
+numbers.forEach(myFun);
+
 //            ------ Break statment ------
 
 // Example - 1

@@ -64,7 +64,7 @@ const cars = ["Saab", "Volvo", "BMW"];
 // Date object:
 const date = new Date("2022-03-25");
 
-
+console.log(car + car);
 console.log(myVar); // null
 console.log(firstName/length); // NaN
 console.log(car); // undefined
