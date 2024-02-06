@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Mouse Events Example</title>
+    <style>
+      #myDiv {
+        width: 200px;
+        height: 100px;
+        background-color: lightblue;
+        text-align: center;
+        line-height: 100px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="myDiv">Click and hold me</div>
+
+    <script>
+      // Get a reference to the div element
+      const myDiv = document.getElementById("myDiv");
+
+      // Define the event handler functions
+      function handleMouseDown() {
+        console.log("Mouse button pressed down");
+        myDiv.style.backgroundColor = "green";
+      }
+
+      function handleMouseUp() {
+        console.log("Mouse button released");
+        myDiv.style.backgroundColor = "lightblue";
+      }
+
+      // Attach event listeners to the div element
+      myDiv.addEventListener("mousedown", handleMouseDown);
+      myDiv.addEventListener("mouseup", handleMouseUp);
+    </script>
+  </body>
+</html>

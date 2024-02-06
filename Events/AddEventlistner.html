@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Event Handling Example</title>
+  </head>
+  <body>
+    <button id="myButton">Click me</button>
+
+    <script>
+      // Event handler function
+      function handleClick() {
+        alert("Button clicked!");
+        console.log("Event type:", event.type);
+        console.log("Target element:", event.target);
+      }
+      // Get reference to the button element
+      const button = document
+        .getElementById("myButton")
+        .addEventListener("click", handleClick);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Toggle Background Color</title>
+    <style>
+      body {
+        transition: background-color 0.5s ease;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="toggleButton">Toggle Background Color</button>
+
+    <script>
+      const button = document.getElementById("toggleButton");
+      let isBackgroundColorOn = false;
+
+      button.addEventListener("click", function () {
+        if (isBackgroundColorOn) {
+          document.body.style.backgroundColor = "";
+          button.textContent = "Toggle Background Color";
+        } else {
+          document.body.style.backgroundColor = "lightblue";
+          button.textContent = "Remove Background Color";
+        }
+        isBackgroundColorOn = !isBackgroundColorOn;
+      });
+    </script>
+  </body>
+</html>

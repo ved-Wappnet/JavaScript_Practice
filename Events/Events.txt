@@ -1,0 +1,16 @@
+
+ - Events in JavaScript are actions or occurrences that happen in the system or in the user's interaction with a webpage. They allow web developers to create interactive and dynamic user interfaces.
+
+ - click: Triggered when a mouse button is clicked.
+ - mouseover: Triggered when the mouse pointer moves over an element.
+ - keydown: Triggered when a key is pressed down.
+ - keyup: Triggered when a key is released.
+ - load: Triggered when a webpage finishes loading.
+ - submit: Triggered when a form is submitted.
+
+ - Event Object:
+ -->  When an event occurs, JavaScript creates an event object that contains information about the event, such  as the type of event, the target element, and any additional data related to the event.
+
+ - Add EventListner syntax = element.addEventListener(event, handler, [options]);
+
+

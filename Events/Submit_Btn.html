@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Submit Event Example</title>
+  </head>
+  <body>
+    <form id="myForm">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required />
+      <br />
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required />
+      <br />
+      <button type="submit">Submit</button>
+    </form>
+
+    <script>
+      const form = document.getElementById("myForm");
+
+      function handleSubmit(event) {
+        event.preventDefault(); // Prevent the form from submitting
+        const formData = new FormData(event.target); // Get form data
+        const username = formData.get("username"); // Get value of username field
+        const password = formData.get("password"); // Get value of password field
+        console.log("Form submitted!");
+        console.log("Username:", username);
+        console.log("Password:", password);
+      }
+
+      form.addEventListener("submit", handleSubmit);
+    </script>
+  </body>
+</html>

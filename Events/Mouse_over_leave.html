@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button id="myElement">Clik Me</button>
+    <script>
+      document
+        .getElementById("myElement")
+        .addEventListener("mouseover", function () {
+          console.log("Mouse over element!");
+        });
+
+      document
+        .getElementById("myElement")
+        .addEventListener("mouseleave", () => {
+          console.log("Mouse Leave element !!");
+        });
+    </script>
+  </body>
+</html>

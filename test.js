@@ -1,9 +1,17 @@
-const loginUserMessage = (username) => {
-  if (!username) {
-    console.log(`please Enter userName`);
-    return;
-  }
-  return `${username} just logged in`;
+// let user = new Object(); // {}  "object constructor" syntax
+let user = {}; // "object literal" syntax
+
+// console.log(user);
+
+const person = {
+  firstName: "John",
+  lastName: "Doe",
+  age: 50,
+  eyeColor: "blue",
+  city : "Ahemdabad"
 };
 
-console.log(loginUserMessage("Ved"));
+const objClone = Object.assign({}, person);
+objClone.firstName = "Ved"
+objClone.lastName = "Panchal"
+console.log(person,objClone);
