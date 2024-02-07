@@ -139,6 +139,7 @@ let finalValue = [...num1, ...num2]; // spread
 console.log(finalValue); // [ 1, 2, 3, 4, 5, 6, 7]
 
 // Rest oprator -- it tooks all rest of parameter
+// let numbers = [1, 2, 3, 4, 5, 6];
 function sum(...number) {
   return number;
 }
@@ -166,5 +167,23 @@ console.log(dummy.reverse()); // [6, 1, 5, 2]
 
 // Sort method
 console.log(dummy.sort());
-console.log(dummy.sort((a,b)=> a-b)); // [ 1, 2, 5, 6 ]
-console.log(dummy.sort((a,b)=> b-a)); // [ 6, 5, 2, 1 ]
+console.log(dummy.sort((a, b) => a - b)); // [ 1, 2, 5, 6 ]
+console.log(dummy.sort((a, b) => b - a)); // [ 6, 5, 2, 1 ]
+
+
+// Here Start with String Methods
+
+// Split Method -- split(separator, limit)
+let text = "How are you doing today?";
+const myArray = text.split(" ");
+let word = myArray[1];
+console.log(myArray); // ['How', 'are', 'you', 'doing', 'today?']
+console.log(word); // are
+
+// SubStr Method
+let text4 = "Hello world!";
+let result1 = text4.substr(1, 4); // ello
+let result2 = text4.substr(2); // llo world!
+
+// substring Method
+

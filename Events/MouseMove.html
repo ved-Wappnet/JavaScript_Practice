@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #rect{
+        margin:10% 45%;
+        border: 2px solid black;
+        padding: 10px 12px;
+        background-color: pink;
+    }
+    #demo3{
+        font-size: 16px;
+        color: red;
+    }
+</style>
+
+<body>
+    <div id="rect">
+        <p id="demo3">Show current year</p>
+    </div>
+    <div>
+
+        <script>
+            document.getElementById("demo3").onmousemove = displayYear;
+            let timer;
+            function displayYear() {
+                let d = new Date();
+                let year = d.getFullYear();
+                document.getElementById("demo3").innerHTML = "Show current year " + year;
+                timer = setTimeout(removeYear, 2000);
+
+            }
+            function removeYear() {
+                document.getElementById("demo3").innerHTML = "Show current year";
+
+            }
+        </script>
+</body>
+
+</html>

@@ -50,7 +50,7 @@ function hello(x) {
 }
 
 const ans1 = hello("arg");
-  const b = "varB";
+const b = "varB";
 ans1(); // varA  varB arg
 
 // Example - 6
@@ -62,5 +62,23 @@ function myfunction(power) {
 }
 
 const cube = myfunction(3);
-const result = cube(2)
+const result = cube(2);
 console.log(result); // 8
+
+// Example - 7
+
+function func() {
+  let counter = 0;
+  return function () {
+    if (counter < 1) {
+      console.log("Hi you called Me !");
+      counter++;
+    } else {
+      console.log("you alredy Called Me !!");
+    }
+  };
+}
+
+const myFunc = func();
+myFunc()
+myFunc()
