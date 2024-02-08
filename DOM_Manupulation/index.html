@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- <a name="html">HTML Tutorial</a><br />
+    <a name="css">CSS Tutorial</a><br /> -->
+
+    <a href="#">hey</a>
+    
+    <h2>Hey Buddy</h2>
+    <p>Wappnet System</p>
+
+    <p id="demo"></p>
+    <script>
+      //   let getdata = (document.getElementById("demo").innerHTML = "Ved Panchal");
+
+      //   let getdata = (document.getElementById("demo").innerHTML =
+      //     "number of anchors " + document.anchors.length);
+
+      document.getElementById("demo").innerHTML = document.body.innerHTML; // returns body element
+      document.getElementById("demo").innerHTML =
+        document.documentElement.innerHTML; // return HTML element
+
+      document.getElementById("demo").innerHTML =
+        "links " + document.links.length;
+    </script>
+  </body>
+</html>
