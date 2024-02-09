@@ -1,0 +1,14 @@
+==> Note* - TypeScript is all about ==> "Type Safety"
+
+--> TypeScript is JavaScript with added syntax for types.
+--> TypeScript is a syntactic superset of JavaScript which adds static typing.
+--> TypeScript allows specifying the types of data being passed around within the code, and has the ability to report errors when the types don't match.
+--> TypeScript allows developers to add types to JavaScript
+
+--> TypeScript Code Compiled into the JavaScript Code.
+
+
+****** Type Assignment ******
+1. When creating a variable, there are two main ways TypeScript assigns a type:
+  i. Explicit ---> writing out the type:
+ ii. Implicit ---> TypeScript will "guess" the type, based on the assigned value:

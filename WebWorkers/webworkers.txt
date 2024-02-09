@@ -1,0 +1,9 @@
+
+
+Web Workers
+
+it means to run your code in a background sscript.
+we can create a worker object using constructor Workers()
+Workers runs in a diffrent globel context.
+They can do complex oprations without interfacing the UI.
+

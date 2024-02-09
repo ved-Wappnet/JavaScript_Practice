@@ -10,23 +10,32 @@
     <a name="css">CSS Tutorial</a><br /> -->
 
     <a href="#">hey</a>
-    
+
     <h2>Hey Buddy</h2>
     <p>Wappnet System</p>
 
     <p id="demo"></p>
     <script>
+      //1
       //   let getdata = (document.getElementById("demo").innerHTML = "Ved Panchal");
 
+      //2
       //   let getdata = (document.getElementById("demo").innerHTML =
       //     "number of anchors " + document.anchors.length);
 
+      //3
       document.getElementById("demo").innerHTML = document.body.innerHTML; // returns body element
       document.getElementById("demo").innerHTML =
         document.documentElement.innerHTML; // return HTML element
-
+      //4
       document.getElementById("demo").innerHTML =
         "links " + document.links.length;
+
+      //5
+      document.write(Date())
     </script>
+
+<script>
+    document.getElementById("demo").innerHTML = "Date : " + Date(); </script>
   </body>
 </html>
